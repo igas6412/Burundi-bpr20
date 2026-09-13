@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Manager - Burundi People Registry</title>
+
+    <link
+        rel="stylesheet"
+        href="manager.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div>
+
+        <h1>
+            BURUNDI PEOPLE REGISTRY
+        </h1>
+
+        <p>
+            Espace Manager
+        </p>
+
+    </div>
+    
+
+
+    <button
+        id="btnDeconnexion"
+        class="btn-deconnexion"
+    >
+        Déconnexion
+    </button>
+</header>
+
+
+<nav class="menu">
+    
+    <a href="index.html">
+        Accueil
+    </a>
+    
+    <a href="register.html">
+        Inscription
+    </a>
+    
+    <a href="liste.html">
+        Liste
+    </a>
+    
+</nav>
+
+
+<main>
+</header>
+
+
+<nav class="menu">
+    
+
+    
+</nav>
+
+
+<main>
+</header>
+
+
+<main>
+</header>
+
+
+<main>
+
+
+    <!-- =================================
+         STATISTIQUES
+    ================================== -->
+
+    <section class="dashboard">
+
+        <div class="card">
+
+            <h3>
+                Nombre d'utilisateurs
+            </h3>
+
+            <strong id="totalComptes">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Personnes enregistrées
+            </h3>
+
+            <strong id="totalPersonnes">
+                0
+            </strong>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         COMPTES UTILISATEURS
+    ================================== -->
+
+    <section>
+
+        <h2>
+            Liste des utilisateurs
+        </h2>
+
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Username</th>
+
+                        <th>Nom complet</th>
+
+                        <th>Rôle</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="comptesBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         PERSONNES
+    ================================== -->
+
+    <section>
+
+        <h2>
+            Liste des personnes enregistrées
+        </h2>
+
+
+        <button
+            id="btnActualiser"
+            class="btn-actualiser"
+        >
+            Actualiser
+        </button>
+
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Nom</th>
+
+                        <th>Prénom</th>
+
+                        <th>Sexe</th>
+
+                        <th>Date naissance</th>
+
+                        <th>Carte identité</th>
+
+                        <th>Téléphone</th>
+
+                        <th>Province</th>
+
+                        <th>Commune</th>
+
+                        <th>Zone</th>
+
+                        <th>Colline</th>
+
+                        <th>Sous-colline</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="tableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <br>
+
+
+        <button
+            id="btnCSV"
+            class="btn-csv"
+        >
+            Télécharger la liste CSV
+        </button>
+
+    </section>
+
+
+</main>
+
+
+<script src="manager.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Burundi People Registry</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- ================= CONNEXION ================= -->
+
+    <div id="pageConnexion" class="connexion-container">
+
+        <div class="connexion-box">
+
+            <h1>BURUNDI PEOPLE REGISTRY</h1>
+
+            <p>Connexion au système</p>
+
+            <form id="connexionForm">
+
+                <div class="form-group">
+
+                    <label for="username">
+                        Nom d'utilisateur
+                    </label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Entrez votre username"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Mot de passe
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Entrez votre mot de passe"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn-login"
+                >
+                    Se connecter
+                </button>
+
+
+                <p
+                    id="messageConnexion"
+                    class="message"
+                ></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= APPLICATION ================= -->
+
+    <div id="application" class="hidden">
+
+        <header>
+
+            <h1>BURUNDI PEOPLE REGISTRY</h1>
+
+            <p>
+                Système d'enregistrement et de gestion
+                des personnes
+            </p>
+
+        </header>
+
+
+        <nav>
+
+            <a href="index.html">
+                Accueil
+            </a>
+
+            <a href="register.html">
+                Inscription
+            </a>
+
+            <a href="liste.html">
+                Liste
+            </a>
+
+            <a
+                href="manager.html"
+                id="managerLink"
+            >
+                Manager
+            </a>
+
+            <button
+                id="btnDeconnexion"
+                class="btn-logout"
+            >
+                Déconnexion
+            </button>
+
+        </nav>
+
+
+        <main>
+
+            <!-- ================= ACCUEIL ================= -->
+
+            <section class="hero">
+
+                <h2>
+                    Bienvenue dans Burundi People Registry
+                </h2>
+
+                <p>
+                    Cette application permet
+                    d'enregistrer et de gérer
+                    les informations des personnes.
+                </p>
+
+                <p id="bienvenueUtilisateur"></p>
+
+                <div class="actions">
+
+                    <a
+                        href="inscription.html"
+                        class="btn-primary"
+                    >
+                        Enregistrer une personne
+                    </a>
+
+                    <a
+                        href="liste.html"
+                        class="btn-secondary"
+                    >
+                        Voir la liste
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= RECHERCHE ================= -->
+
+            <section>
+
+                <h2>
+                    Rechercher une personne
+                </h2>
+
+                <div class="search-box">
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Nom, prénom, carte d'identité ou téléphone..."
+                    >
+
+                    <button
+                        id="btnRecherche"
+                        class="btn-primary"
+                    >
+                        Rechercher
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="resultatRecherche"
+                    class="resultats"
+                ></div>
+
+            </section>
+
+
+            <!-- ================= INFORMATIONS ================= -->
+
+            <section>
+
+                <h2>
+                    Informations
+                </h2>
+
+                <div class="cards">
+
+                    <div class="card">
+
+                        <h3>Enregistrement</h3>
+
+                        <p>
+                            Ajouter les informations
+                            d'une personne dans le système.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>Recherche</h3>
+
+                        <p>
+                            Rechercher rapidement
+                            une personne enregistrée.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>Liste</h3>
+
+                        <p>
+                            Consulter les personnes
+                            enregistrées.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>Gestion</h3>
+
+                        <p>
+                            Le Manager peut gérer
+                            les utilisateurs du système.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <footer>
+
+            <p>
+                © 2026 Burundi People Registry
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html

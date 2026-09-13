@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Liste des personnes</title>
+
+    <link
+        rel="stylesheet"
+        href="liste.css"
+    >
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>LISTE DES PERSONNES</h1>
+
+    <p>
+        Personnes enregistrées
+    </p>
+
+</header>
+
+
+<nav>
+
+    <a href="index.html">Accueil</a>
+
+    <a href="register.html">
+        Enregistrer
+    </a>
+
+    <a href="liste.html">
+        Liste
+    </a>
+
+    <a href="manager.html">
+        Manager
+    </a>
+
+</nav>
+
+
+<main>
+
+<section>
+
+    <h2>Liste des personnes</h2>
+
+    <p>
+        Nombre total :
+
+        <strong id="totalPersonnes">
+            0
+        </strong>
+    </p>
+
+
+    <div class="search-box">
+
+        <input
+            type="search"
+            id="listeSearch"
+            placeholder="Rechercher..."
+        >
+
+        <button
+            class="btn btn-primary"
+            onclick="rechercherDansListe()"
+        >
+            Rechercher
+        </button>
+
+    </div>
+
+
+    <br>
+
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Sexe</th>
+                    <th>Carte identité</th>
+                    <th>Téléphone</th>
+                    <th>Province</th>
+                    <th>Commune</th>
+                    <th>Zone</th>
+                    <th>Colline</th>
+                    <th>Sous-colline</th>
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="tableBody"></tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Burundi People Registry
+    </p>
+
+</footer>
+
+
+<script src="liste.js"></script>
+
+</body>
+
+</html>

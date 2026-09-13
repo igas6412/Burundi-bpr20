@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #f2f4f7;
+
+    color: #222;
+}
+
+
+/* HEADER */
+
+header {
+    background: #0b5ed7;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    background: white;
+
+    padding: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 2px 5px #ccc;
+}
+
+
+nav a {
+    text-decoration: none;
+
+    color: #0b5ed7;
+
+    font-weight: bold;
+
+    margin: 5px 10px;
+}
+
+
+nav button {
+    border: none;
+
+    background: #dc3545;
+
+    color: white;
+
+    padding: 9px 15px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+/* MAIN */
+
+main {
+    width: 95%;
+
+    max-width: 1100px;
+
+    margin: 25px auto;
+}
+
+
+section {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px #ddd;
+}
+
+
+h2 {
+    color: #0b5ed7;
+}
+
+
+/* FORMULAIRE */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.form-group label {
+    font-weight: bold;
+
+    margin-bottom: 6px;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #0b5ed7;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    margin-top: 20px;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+
+.btn-save {
+    background: #198754;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 18px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+
+.btn-reset {
+    background: #6c757d;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 18px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    margin-left: 5px;
+}
+
+
+/* MESSAGE */
+
+.message {
+    font-weight: bold;
+
+    margin-top: 15px;
+}
+
+
+.message.success {
+    color: #198754;
+}
+
+
+.message.error {
+    color: #dc3545;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    nav a {
+        display: block;
+
+        margin: 10px;
+    }
+
+
+    nav button {
+        margin-top: 8px;
+    }
+
+}
